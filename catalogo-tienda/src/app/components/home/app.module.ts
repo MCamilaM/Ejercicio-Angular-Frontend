@@ -20,17 +20,17 @@ import {InputTextModule} from 'primeng/inputtext';
 import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
 import {TabViewModule} from 'primeng/tabview';
-//import { NosotrosComponent } from "../nosotros/nosotros.component";
+import { NosotrosComponent } from "../nosotros/nosotros.component";
 
 
 
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
     ProductosComponent,
     HeaderComponent,
-    //NosotrosComponent
+    NosotrosComponent
    ],
   imports: [
     BrowserModule,
