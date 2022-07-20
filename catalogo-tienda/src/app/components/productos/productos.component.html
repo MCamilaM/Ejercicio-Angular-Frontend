@@ -1,9 +1,28 @@
 
-<p-dataView [value]="productos">
-  <ng-template let-producto pTemplate="listItem">
-      <div>
-          {{producto.nombre}}
-      </div>
-  </ng-template>
-</p-dataView>
+<div class="card">
+  <p-dataView #dv [value]="productos" [paginator]="true" [rows]="9" layout="grid">
+      <ng-template let-product pTemplate="gridItem">
+          <div class="col-12 md:col-4">
+              <div class="product-grid-item card">
+                  <div class="product-grid-item-top">
+                      <div>
+                          <i class="pi pi-tag product-category-icon"></i>
+                          <span class="product-category">Naturaleza</span>
+                      </div>
+                      <span [class]="'product-badge status-' + product.cantidad">Stock: {{product.cantidad}}</span>
+                  </div>
+                  <div class="product-grid-item-content">
+                      <img [src]="product.imagen" [alt]="product.nombre" width="300" height="200"/>
+                      <div class="product-name">{{product.nombre}}</div>
+                      <div class="product-description mt-2">{{product.descripcion}}</div>
+                  </div>
+                  <div class="product-grid-item-bottom">
+                      <span class="product-price">${{product.precio}}</span>
+                      <p-button icon="pi pi-shopping-cart" [disabled]="product.cantidad === 0"></p-button>
+                  </div>
+              </div>
+          </div>
+      </ng-template>
+  </p-dataView>
+</div> 
 

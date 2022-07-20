@@ -13,7 +13,7 @@ let generateProducts = () => {
             "descripcion": faker.commerce.productDescription(),
             "precio": faker.commerce.price(),
             "cantidad": faker.datatype.number(99),
-            "imagen": faker.image.nature()
+            "imagen": faker.image.nature(width = 640, height = 480, randomize =  true) 
         });
     }
     //faker.random.image()

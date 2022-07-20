@@ -4,8 +4,7 @@ import { ProductosComponent } from '../productos/productos.component';
 import {AppComponent} from './app.component'
 
 const routes: Routes = [
-  { path: 'home', component: AppComponent },
-  { path: 'producto/id:', component: AppComponent},
+  { path: '**', pathMatch: 'full', redirectTo: 'productos'},
   { path: 'productos', component: ProductosComponent},
 ];
 

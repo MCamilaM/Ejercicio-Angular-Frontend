@@ -4,6 +4,7 @@ import { HeaderComponent } from "../header/header.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {CommonModule} from '@angular/common';
 
 import { AppComponent } from "./app.component";
 import { ProductosComponent } from "../productos/productos.component";
@@ -18,6 +19,8 @@ import {DialogModule} from 'primeng/dialog';
 import {InputTextModule} from 'primeng/inputtext';
 import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
+import {TabViewModule} from 'primeng/tabview';
+
 
 
 
@@ -39,7 +42,9 @@ import {RippleModule} from 'primeng/ripple';
     ButtonModule,
     RippleModule,
     RatingModule,
-    FormsModule
+    FormsModule,
+    TabViewModule,
+    CommonModule
   ],
   providers: [DatosService],
   bootstrap: [AppComponent]
