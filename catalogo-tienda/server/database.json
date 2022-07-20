@@ -155,9 +155,9 @@
 		{
 			"id": 20,
 			"nombre": "Sorprendente Algodón Bicicleta",
-			"descripcion": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+			"descripcion": "The automobile layout consists of a front-engine design",
 			"precio": "499.00",
-			"cantidad": 37,
+			"cantidad": 0,
 			"imagen": "http://placeimg.com/640/480/nature?41333"
 		}
 	]
