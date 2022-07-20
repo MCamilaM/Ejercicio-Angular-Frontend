@@ -20,6 +20,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
 import {TabViewModule} from 'primeng/tabview';
+//import { NosotrosComponent } from "../nosotros/nosotros.component";
 
 
 
@@ -28,7 +29,8 @@ import {TabViewModule} from 'primeng/tabview';
   declarations: [		
     AppComponent,
     ProductosComponent,
-    HeaderComponent
+    HeaderComponent,
+    //NosotrosComponent
    ],
   imports: [
     BrowserModule,
